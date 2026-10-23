@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Umme Zaiba — From a String to a Universe</title>
+<meta name="description" content="Umme Zaiba — software engineer. A scroll journey from string theory to a black hole and out through a white hole: how everything you build starts as something smaller.">
+<meta name="theme-color" content="#02030a">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js","three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"}}</script>
+</head>
+<body class="loading">
+<div id="loader"><p class="mono">INITIALISING UNIVERSE</p><div class="lbar"><b id="lbar"></b></div><p class="mono" id="lpct">0%</p></div>
+<canvas id="gl"></canvas>
+<div id="flash"></div>
+<div class="vignette"></div>
+
+<header class="top"><a class="brand" href="#top">UMME ZAIBA<i>.</i></a><button id="skip" class="mono">SKIP JOURNEY ↓</button></header>
+<nav class="ladder" id="ladder" aria-label="Journey chapters"></nav>
+
+<section class="chap" id="chap" aria-live="polite">
+  <p class="mono num"><span id="cNum">01</span> / 10 &nbsp;·&nbsp; <span id="cLesson">THE SMALLEST UNIT</span></p>
+  <h2 id="cName">String</h2>
+  <p class="phys" id="cPhys"></p>
+  <div class="codebox"><div class="cbh mono"><i></i><i></i><i></i><span id="cFile">basics.js</span></div><pre id="cCode"></pre></div>
+</section>
+<div class="meter mono"><span>SCALE</span><b id="cScale">10⁻³⁵ m</b></div>
+<div class="orbtag mono" id="orbTag"><i></i>UMME ZAIBA</div>
+<div class="hint mono" id="hint">SCROLL TO BEGIN <i></i></div>
+
+<div id="journey"></div>
+
+<main id="home">
+  <section class="hero" id="top">
+    <p class="mono kicker reveal">● YOU MADE IT THROUGH · A NEW UNIVERSE</p>
+    <h1 class="reveal">UMME<br>ZAIBA<i>.</i></h1>
+    <p class="lead reveal">Software engineer. Eternal learner. Orbiting a goal — building things that start small and end up working at scale.</p>
+    <div class="cta reveal"><a class="btn" href="#work">Explore my work</a><a class="btn ghost" href="#contact">Say hello</a></div>
+  </section>
+
+  <section id="about" class="sec">
+    <p class="mono lbl reveal">(ABOUT)</p>
+    <h2 class="h2 reveal">Everything I build started as <em>something smaller.</em></h2>
+    <div class="two">
+      <p class="reveal">Replace this with a short, human intro: who you are, what you love building, and what you are learning right now. Two or three sentences is plenty — the universe already did the heavy lifting.</p>
+      <ul class="stats reveal"><li><b>0+</b><span>Years experience</span></li><li><b>0+</b><span>Projects shipped</span></li><li><b>∞</b><span>Curiosity</span></li></ul>
+    </div>
+    <div class="path reveal">
+      <article><i class="mono">01 · STRING → QUARK</i><h3>Basics</h3><p>Characters, syntax, tokens. Small rules that everything else depends on.</p></article>
+      <article><i class="mono">02 · ATOM → CELL</i><h3>Languages</h3><p>Grammar, functions, structures — ideas that can reproduce and compose.</p></article>
+      <article><i class="mono">03 · ASTRONAUT → SHIP</i><h3>Applications</h3><p>Modules assembled into something that actually runs and carries people.</p></article>
+      <article><i class="mono">04 · STAR → GALAXY</i><h3>The goal</h3><p>Products with purpose — a gravity worth orbiting for years.</p></article>
+    </div>
+  </section>
+
+  <section id="work" class="sec">
+    <p class="mono lbl reveal">(SELECTED WORK)</p>
+    <h2 class="h2 reveal">Worlds I've <em>built</em></h2>
+    <div class="planets">
+      <a class="pl reveal" href="#"><span class="orb o1"></span><i class="mono">01 · REACT · NODE</i><h3>Project One</h3><p>One sharp sentence on what it does and the problem it solved for real users.</p><b class="mono">VIEW CASE STUDY ↗</b></a>
+      <a class="pl reveal" href="#"><span class="orb o2"></span><i class="mono">02 · TYPESCRIPT · AWS</i><h3>Project Two</h3><p>Describe the scale, the stack decisions, and the measurable outcome.</p><b class="mono">VIEW CASE STUDY ↗</b></a>
+      <a class="pl reveal" href="#"><span class="orb o3"></span><i class="mono">03 · NEXT.JS · STRIPE</i><h3>Project Three</h3><p>A product designed and built end-to-end. What was hard, what you learned.</p><b class="mono">VIEW CASE STUDY ↗</b></a>
+      <a class="pl reveal" href="#"><span class="orb o4"></span><i class="mono">04 · PYTHON · AI</i><h3>Project Four</h3><p>An experiment, an open-source tool, or something built just because.</p><b class="mono">VIEW CASE STUDY ↗</b></a>
+    </div>
+  </section>
+
+  <section id="skills" class="sec">
+    <p class="mono lbl reveal">(CONSTELLATIONS)</p>
+    <h2 class="h2 reveal">The stars I <em>navigate by</em></h2>
+    <div class="consts">
+      <div class="reveal"><h3 class="mono">FRONTEND</h3><p><span>JavaScript</span><span>TypeScript</span><span>React</span><span>Next.js</span><span>CSS</span><span>WebGL</span></p></div>
+      <div class="reveal"><h3 class="mono">BACKEND</h3><p><span>Node.js</span><span>Python</span><span>Java</span><span>PostgreSQL</span><span>REST</span><span>GraphQL</span></p></div>
+      <div class="reveal"><h3 class="mono">CLOUD & TOOLS</h3><p><span>AWS</span><span>Docker</span><span>CI/CD</span><span>Git</span><span>Figma</span><span>Linux</span></p></div>
+    </div>
+  </section>
+
+  <section id="missions" class="sec">
+    <p class="mono lbl reveal">(MISSION LOG)</p>
+    <h2 class="h2 reveal">Where I've <em>flown</em></h2>
+    <ol class="log">
+      <li class="reveal"><span class="mono">2024 — NOW</span><h3>Senior Role Title</h3><em class="mono">COMPANY NAME</em><p>Led a team shipping a core product. Describe impact with real numbers.</p></li>
+      <li class="reveal"><span class="mono">2022 — 2024</span><h3>Role Title</h3><em class="mono">COMPANY NAME</em><p>Built and scaled key features from zero to production.</p></li>
+      <li class="reveal"><span class="mono">2020 — 2022</span><h3>First Role / Internship</h3><em class="mono">COMPANY NAME</em><p>Where it started: learned the craft, shipped the first real code.</p></li>
+    </ol>
+  </section>
+
+  <section id="contact" class="sec contact">
+    <p class="mono lbl reveal">(TRANSMISSION)</p>
+    <h2 class="big reveal">Let's explore<br>something <em>together.</em></h2>
+    <button class="mail reveal" id="mail"><span>hello@example.com</span><i>↗</i></button>
+    <div class="socials mono reveal"><a href="#">GITHUB ↗</a><a href="#">LINKEDIN ↗</a><a href="#">X / TWITTER ↗</a><a href="#">RESUME ↗</a></div>
+  </section>
+  <footer class="mono"><span>© <span id="yr"></span> UMME ZAIBA</span><span>BUILT WITH THREE.JS · ONE SCROLL, ONE UNIVERSE</span></footer>
+</main>
+<div class="toast mono" id="toast">EMAIL COPIED</div>
+<script type="module" src="main.js"></script>
+</body></html>
