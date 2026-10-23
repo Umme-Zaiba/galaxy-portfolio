@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Umme Zaiba — From a String to a Universe</title>
 <meta name="description" content="Umme Zaiba — software engineer. A scroll journey from string theory to a black hole and out through a white hole: how everything you build starts as something smaller.">
-<meta name="theme-color" content="#02030a">
+<meta name="theme-color" content="#eef0ff">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
@@ -13,30 +13,39 @@
 </head>
 <body class="loading">
 <div id="loader"><p class="mono">INITIALISING UNIVERSE</p><div class="lbar"><b id="lbar"></b></div><p class="mono" id="lpct">0%</p></div>
-<canvas id="gl"></canvas>
-<div id="flash"></div>
-<div class="vignette"></div>
 
-<header class="top"><a class="brand" href="#top">UMME ZAIBA<i>.</i></a><button id="skip" class="mono">SKIP JOURNEY ↓</button></header>
-<nav class="ladder" id="ladder" aria-label="Journey chapters"></nav>
+<header class="top">
+  <a class="brand" href="#top">UMME ZAIBA</a>
+  <p class="tagline mono">FROM A STRING TO A UNIVERSE — HOW EVERY PROGRAM GROWS</p>
+  <div class="pills"><button id="skip" class="pill">Skip journey ↓</button><a class="pill dark" href="#contact">Let's talk <i>↗</i></a></div>
+</header>
+<i class="plus p1">+</i><i class="plus p2">+</i><i class="plus p3">+</i><i class="plus p4">+</i>
 
-<section class="chap" id="chap" aria-live="polite">
-  <p class="mono num"><span id="cNum">01</span> / 10 &nbsp;·&nbsp; <span id="cLesson">THE SMALLEST UNIT</span></p>
-  <h2 id="cName">String</h2>
-  <p class="phys" id="cPhys"></p>
-  <div class="codebox"><div class="cbh mono"><i></i><i></i><i></i><span id="cFile">basics.js</span></div><pre id="cCode"></pre></div>
-</section>
-<div class="meter mono"><span>SCALE</span><b id="cScale">10⁻³⁵ m</b></div>
-<div class="orbtag mono" id="orbTag"><i></i>UMME ZAIBA</div>
-<div class="hint mono" id="hint">SCROLL TO BEGIN <i></i></div>
+<div id="stage">
+  <canvas id="gl"></canvas><div class="vignette"></div><div id="flash"></div>
+  <nav class="ladder" id="ladder" aria-label="Journey chapters"></nav>
+  <section class="chap" id="chap" aria-live="polite">
+    <p class="mono num"><span id="cNum">01</span> / 11 &nbsp;·&nbsp; <span id="cLesson">THE SMALLEST UNIT</span></p>
+    <h2 id="cName">String</h2>
+    <div class="rows">
+      <p class="row"><b class="mono">IN NATURE</b><span id="cNature"></span></p>
+      <p class="row"><b class="mono">IN CODE</b><span id="cMeaning"></span></p>
+    </div>
+    <div class="codebox"><div class="cbh mono"><i></i><i></i><i></i><span id="cFile">basics.js</span></div><pre id="cCode"></pre></div>
+  </section>
+  <div class="meter mono"><span>SCALE</span><b id="cScale">10⁻³⁵ m</b></div>
+  <div class="orbtag mono" id="orbTag"><i></i>UMME ZAIBA</div>
+  <div class="hint mono" id="hint">SCROLL — EVERYTHING GREAT STARTS TINY <i></i></div>
+  <div class="prog"><b id="prog"></b></div>
+</div>
 
 <div id="journey"></div>
 
 <main id="home">
   <section class="hero" id="top">
-    <p class="mono kicker reveal">● YOU MADE IT THROUGH · A NEW UNIVERSE</p>
+    <p class="mono kicker reveal">● YOU MADE IT THROUGH — WELCOME TO A NEW UNIVERSE</p>
     <h1 class="reveal">UMME<br>ZAIBA<i>.</i></h1>
-    <p class="lead reveal">Software engineer. Eternal learner. Orbiting a goal — building things that start small and end up working at scale.</p>
+    <p class="lead reveal">Software engineer and eternal learner. The journey you just took is how I work: start with the smallest idea, build it up piece by piece, and keep orbiting a goal until it ships.</p>
     <div class="cta reveal"><a class="btn" href="#work">Explore my work</a><a class="btn ghost" href="#contact">Say hello</a></div>
   </section>
 
